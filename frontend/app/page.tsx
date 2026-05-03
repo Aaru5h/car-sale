@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import InventorySection from "./components/InventorySection";
 import ShowroomSection from "./components/ShowroomSection";
 import FinanceSection from "./components/FinanceSection";
+import TradeInSection from "./components/TradeInSection";
 import SupportSection from "./components/SupportSection";
 import Footer from "./components/Footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <InventorySection />
       <ShowroomSection />
       <FinanceSection />
+      <TradeInSection />
       <SupportSection />
       <Footer />
     </main>
