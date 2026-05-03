@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Support | TARGO AUTOMOTIVE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "tertiary": "#c8c6c5",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "error": "#ffb4ab",
+                        "secondary": "#c6c6c7",
+                        "inverse-surface": "#e2e2e2",
+                        "on-primary-container": "#5c0100",
+                        "tertiary-container": "#929090",
+                        "surface-tint": "#ffb4a8",
+                        "surface-bright": "#393939",
+                        "inverse-primary": "#bb170b",
+                        "outline-variant": "#5c403b",
+                        "primary-fixed": "#ffdad4",
+                        "on-secondary-container": "#b4b5b5",
+                        "surface-container": "#1f1f1f",
+                        "outline": "#ac8883",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-container": "#454747",
+                        "on-primary-fixed": "#410000",
+                        "surface-container-highest": "#353535",
+                        "surface": "#131313",
+                        "on-primary": "#680100",
+                        "inverse-on-surface": "#303030",
+                        "primary-container": "#ff5540",
+                        "error-container": "#93000a",
+                        "on-secondary": "#2f3131",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#930200",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#454747",
+                        "on-surface-variant": "#e5bdb7",
+                        "primary": "#ffb4a8",
+                        "on-tertiary": "#313030",
+                        "background": "#131313",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-container-low": "#1b1b1b",
+                        "on-surface": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-variant": "#353535",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-tertiary-container": "#2a2a2a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin": "32px",
+                        "unit": "4px",
+                        "gutter": "16px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Rubik"],
+                        "headline-md": ["Rubik"],
+                        "headline-xl": ["Rubik"],
+                        "headline-lg": ["Rubik"],
+                        "label-md": ["Rubik"],
+                        "body-lg": ["Rubik"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0%", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "letterSpacing": "-4%", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-4%", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-4%", "fontWeight": "700"}],
+                        "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0%", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .liquid-glass {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(40px) saturate(180%);
+            -webkit-backdrop-filter: blur(40px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: inset 0 10px 10px rgba(0,0,0,0.2);
+        }
+        .diagonal-cut {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
+        }
+        .diagonal-cut-reverse {
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+        }
+        .bg-geometric {
+            background-image: linear-gradient(45deg, transparent 48%, rgba(238, 63, 44, 0.05) 50%, transparent 52%),
+                              linear-gradient(-45deg, transparent 48%, rgba(238, 63, 44, 0.05) 50%, transparent 52%);
+            background-size: 100px 100px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full border-b border-white/10 bg-black/60 backdrop-blur-[40px] saturate-[180%] flex justify-between items-center px-8 h-20 z-50 shadow-[inset_0_10px_10px_rgba(0,0,0,0.2)]">
+<div class="text-2xl font-black italic tracking-widest text-white uppercase font-['Rubik']">TARGO</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Rubik'] font-bold uppercase tracking-tighter text-white/80 hover:text-red-500 transition-colors duration-300" href="#">Inventory</a>
+<a class="font-['Rubik'] font-bold uppercase tracking-tighter text-white/80 hover:text-red-500 transition-colors duration-300" href="#">Showroom</a>
+<a class="font-['Rubik'] font-bold uppercase tracking-tighter text-white/80 hover:text-red-500 transition-colors duration-300" href="#">Finance</a>
+<a class="font-['Rubik'] font-bold uppercase tracking-tighter text-white/80 hover:text-red-500 transition-colors duration-300" href="#">Trade-in</a>
+<a class="font-['Rubik'] font-bold uppercase tracking-tighter text-red-600 border-b-2 border-red-600 pb-1" href="#">Support</a>
+</div>
+<button class="bg-[#EE3F2C] text-white px-6 py-2 font-['Rubik'] font-bold uppercase tracking-widest diagonal-cut hover:brightness-110 active:scale-95 transition-all">
+            Inquire Now
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-20 px-8 bg-geometric overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<span class="text-primary font-label-md uppercase tracking-[0.2em] mb-4 block">Engineered Support</span>
+<h1 class="font-headline-xl text-white uppercase tracking-tighter max-w-2xl leading-none">
+                AT YOUR <br/> <span class="text-red-600 italic">SERVICE</span>
+</h1>
+</div>
+<!-- Decorative abstract element -->
+<div class="absolute top-20 right-[-10%] w-[50%] h-[500px] border-l border-b border-white/5 skew-x-[-20deg] pointer-events-none"></div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-8 pb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Info Column -->
+<div class="lg:col-span-5 space-y-8">
+<div class="liquid-glass p-8 diagonal-cut group">
+<div class="flex items-start gap-6">
+<div class="p-3 bg-red-600/10 border border-red-600/20 text-red-600">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-2">Global Headquarters</h3>
+<p class="text-tertiary font-body-md">
+                                4822 Innovation Way<br/>
+                                Tech District, TX 75201<br/>
+                                United States
+                            </p>
+</div>
+</div>
+</div>
+<div class="liquid-glass p-8 diagonal-cut group">
+<div class="flex items-start gap-6">
+<div class="p-3 bg-red-600/10 border border-red-600/20 text-red-600">
+<span class="material-symbols-outlined" data-icon="phone">phone</span>
+</div>
+<div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-2">Direct Line</h3>
+<p class="text-tertiary font-body-md text-lg font-bold tracking-widest">+1 (888) 555-TARGO</p>
+<p class="text-white/40 font-label-md mt-1 uppercase">24/7 Priority Support for Members</p>
+</div>
+</div>
+</div>
+<div class="liquid-glass p-8 diagonal-cut group">
+<div class="flex items-start gap-6">
+<div class="p-3 bg-red-600/10 border border-red-600/20 text-red-600">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-2">Operating Hours</h3>
+<div class="space-y-2 mt-4">
+<div class="flex justify-between border-b border-white/5 pb-2">
+<span class="text-white font-label-md uppercase">Showroom</span>
+<span class="text-tertiary font-label-md">09:00 - 20:00</span>
+</div>
+<div class="flex justify-between border-b border-white/5 pb-2">
+<span class="text-white font-label-md uppercase">Technical Service</span>
+<span class="text-tertiary font-label-md">07:00 - 22:00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-white font-label-md uppercase">Concierge</span>
+<span class="text-red-500 font-label-md font-bold uppercase">24 Hours</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Support Form Column -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-high p-10 diagonal-cut-reverse border border-white/5 shadow-2xl relative overflow-hidden">
+<!-- Subtle background visual -->
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h2 class="font-headline-lg text-white uppercase tracking-tighter mb-8">Technical Request</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-white/60 uppercase tracking-widest">Full Name</label>
+<input class="w-full bg-black border-0 border-b border-white/20 focus:border-red-600 focus:ring-0 text-white py-3 transition-all duration-300 placeholder:text-white/10" placeholder="ENTER NAME" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-white/60 uppercase tracking-widest">Email Identity</label>
+<input class="w-full bg-black border-0 border-b border-white/20 focus:border-red-600 focus:ring-0 text-white py-3 transition-all duration-300 placeholder:text-white/10" placeholder="USER@PROVIDER.COM" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-white/60 uppercase tracking-widest">Category</label>
+<select class="w-full bg-black border-0 border-b border-white/20 focus:border-red-600 focus:ring-0 text-white py-3 transition-all duration-300">
+<option>VEHICLE MAINTENANCE</option>
+<option>FINANCE &amp; LEASING</option>
+<option>GLOBAL LOGISTICS</option>
+<option>GENERAL INQUIRY</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-white/60 uppercase tracking-widest">Manifest Details</label>
+<textarea class="w-full bg-black border-0 border-b border-white/20 focus:border-red-600 focus:ring-0 text-white py-3 transition-all duration-300 placeholder:text-white/10" placeholder="DESCRIBE YOUR REQUIREMENTS..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-[#EE3F2C] text-white py-5 font-headline-md uppercase tracking-widest diagonal-cut hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-4" type="submit">
+                                Transmit Request
+                                <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Secondary Visual Card -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative h-48 diagonal-cut group overflow-hidden">
+<img alt="Professional logistics center" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern dark high-tech control room with blue holographic screens and sharp industrial aesthetics for global vehicle tracking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkLP6vHmBvgdwDwDPzBvTAkA4Yqxr1gZ1bQUu6UqiTNgMCMrC436jsceHJYelqsfnk5SonZb04eQGfICDx84cTeW6s8p2FiQQ64bQP8L6QigNMixxHrG6NCkm1U4NW1usf9iqKi3c_g7X7bzrocsY5rg4t4MUVq_lVSkwfCcjgLzPcEzTL_GLTM70B8JMHJO1geprTJcVjPIBc5uhm-57dOOfjNkdj6246nEu9FO1VRmJ5gZooINdvBDl4Ysk1lU72cMf3AZOR7cE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<span class="text-white font-label-md uppercase font-bold tracking-widest">Global Operations</span>
+</div>
+</div>
+<div class="relative h-48 diagonal-cut group overflow-hidden">
+<img alt="Corporate architectural detail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Abstract architectural shot of a sleek glass skyscraper reflecting a dramatic dark sky with sharp red accent lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxTxOnLTXpRz5mdsljn-oRxqllMF7CxjDykVmgXEywjACAui0pxrot8yGVTLUxic72J9UH8W1F9HJwd2zQEezo5WTWzI8hw3EEEa7bL_ByvSkW6OzKtI_dEAEUHX2xLpkWAyulWdtT11lIC_6biduwu1orm8DKmTXlzvKdBB6XyBbQgw-49hagjoMYpomIEZmlz0lRlpkp9HmyQcHUgJ_CBGp9kB0OajhK7vK7ugle4djL0C_WlQOhyzrOHr66LMaiPTiUzr05TkI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<span class="text-white font-label-md uppercase font-bold tracking-widest">Fleet Hubs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-black border-t border-white/10 py-12 w-full">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-black text-white uppercase font-['Rubik']">TARGO</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40 hover:text-red-600 transition-all duration-200" href="#">Privacy Policy</a>
+<a class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40 hover:text-red-600 transition-all duration-200" href="#">Terms of Service</a>
+<a class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40 hover:text-red-600 transition-all duration-200" href="#">Fleet Sales</a>
+<a class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40 hover:text-red-600 transition-all duration-200" href="#">Careers</a>
+<a class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40 hover:text-red-600 transition-all duration-200" href="#">Global Locations</a>
+</div>
+<div class="font-['Rubik'] text-xs uppercase tracking-widest text-white/40">
+                © 2024 TARGO AUTOMOTIVE. ENGINEERED PRECISION.
+            </div>
+</div>
+</footer>
+</body></html>
